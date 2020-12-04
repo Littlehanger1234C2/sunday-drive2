@@ -390,11 +390,6 @@ Main_Car.setPosition(8, 8)
 scene.centerCameraAt(0, 0)
 scene.cameraFollowSprite(Main_Car)
 controller.player2.moveSprite(Person)
-if (Person == tiles.getTilesByType(myTiles.tile1)) {
-	
-} else {
-	
-}
 game.onUpdateInterval(2500, function () {
     Car_2 = sprites.createProjectileFromSide(img`
         . . . . . . . . . . . . . . . . 
@@ -415,7 +410,6 @@ game.onUpdateInterval(2500, function () {
         . . . . . . . . . . . . . . . . 
         `, 50, 0)
     Car_2.y = 40
-    music.playTone(262, music.beat(BeatFraction.Quarter))
 })
 game.onUpdateInterval(2500, function () {
     Car_3 = sprites.createProjectileFromSide(img`
@@ -437,7 +431,6 @@ game.onUpdateInterval(2500, function () {
         . . . . . . . . . . . . . . . . 
         `, 50, 0)
     Car_3.y = 72
-    music.playTone(100, music.beat(BeatFraction.Quarter))
 })
 game.onUpdateInterval(1000, function () {
     Car_1 = sprites.createProjectileFromSide(img`
@@ -459,5 +452,4 @@ game.onUpdateInterval(1000, function () {
         . . . . . . . . . . . . . . . . 
         `, 50, 0)
     Car_1.y = 55
-    music.playTone(131, music.beat(BeatFraction.Quarter))
 })
